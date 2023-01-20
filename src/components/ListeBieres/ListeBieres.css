@@ -1,0 +1,13 @@
+.list-biere{
+    margin-bottom:40px;
+}
+
+.list-biere > a{
+   margin:0 auto;
+}
+
+.list-biere a{
+    text-decoration: none;
+    color:#000;
+}
+

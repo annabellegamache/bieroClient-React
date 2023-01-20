@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.zone-login-container{
+  position: sticky;
+  top:0;
+  z-index: 10;
+}
+
+.zone-login{
+  position: sticky;
+  background-color: #000;
+  text-align: right;
+}
+
+  header{
+    text-align: center;
+    min-height: 250px;
+    background-image:url('biere1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right top;
+    
+  }
+
+  header a{
+    padding:20px;
+    display: block;
+    background-color: rgba(255,255,255,0.5);
+    text-decoration: none;
+  }
+
+  
+  header svg{
+    width: 150px;
+  }
+
+  header h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 4em;
+    line-height: 1.25em;
+    color:#000;
+    transition: color ease-in-out 0.3s;
+
+  }
+
+  header h1:hover{
+   color: var(--color-brun);
+  }
+
+  @media (min-width: 400px) { 
+   
+    .zone-login{
+    
+      padding-right: 20px;
+    }
+
+    header h1{
+      margin-left:20px;
+    }
+
+  }
+
+  @media (min-width: 768px) { 
+
+    
+
+    header{
+      text-align: left;
+      background-image:url('biere1.png');
+    
+    }
+
+    header a{
+      background-color: rgba(255,255,255,0.3);
+    }
+  }
+
+  @media (min-width: 1290px) { 
+    header{
+      text-align: left;
+      background-image:url('biere2.png');
+    }
+  }

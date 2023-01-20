@@ -1,0 +1,164 @@
+.detail-biere-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.detail-biere-container div:first-child {
+   text-align:center;
+}
+
+.detail-biere-container img {
+    object-fit: contain;
+    max-height: 40vh;
+    padding-bottom: 20px;
+    margin: 0 auto 20px auto;
+}
+
+.detail-biere-container p {
+    border-bottom: 1px solid var(--color-brun);
+    padding: 20px 0;
+    max-width: 40ch;
+}
+
+.detail-biere-container h2 {
+    margin: 0;
+}
+
+.detail-biere-container h3 {
+    font-size: calc(1.25em + 1vmin);
+    color: var(--color-brun-fonce);
+    padding-bottom: 0;
+    margin-bottom: 0;
+    max-width: 40ch;
+    border-bottom: none;
+}
+
+.detail-biere-container h3 small {
+    font-size: calc(0.6em + 1vmin);
+    color: var(--color-brun);
+}
+
+.detail-biere-container .etoileBox {
+    text-align: left;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--color-brun);
+}
+
+/*commentaire title*/
+div.comments article:first-of-type:before {
+    display: block;
+    margin: 20px 0;
+    font-weight: bold;
+    font-family: 'DM Serif Display', serif;
+    line-height: 1.25em;
+    font-size: calc(1.25em + 1vmin);
+}
+
+div.comments article p {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+div.comments article blockquote i {
+    color: rgba(0, 0, 0, 0.3);
+    margin: 0 10px;
+}
+
+div.comments article p small {
+    display: block;
+    max-width: fit-content;
+    margin-top: 30px;
+    border-top: 3px solid var(--color-brun);
+    text-align: right;
+
+}
+
+/* Zone interactive*/
+.userZone-container {
+    padding: 20px 20px 40px 20px;
+    background-color: #222;
+    color: #fff;
+}
+
+.userZone-container h4 small {
+    color: var(--color-brun-pale);
+}
+
+.userZone h5 {
+    font-weight: 400;
+    font-size: calc(0.5em + 1vmin);
+}
+
+
+.userZone form input[type=submit] {
+    margin-top: 20px;
+}
+.userZone  div:first-child  {
+    max-width: 270px;
+}
+
+/* Formulaire étoile */
+
+.starForm>input {
+    display: none;
+}
+
+.starForm>label:before {
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.starForm>label {
+    color: #ddd;
+    float: right;
+}
+
+/*ref https://codepen.io/jamesbarnett/pen/najzYK*/
+
+.starForm>input:checked~label,
+/* show gold star when clicked */
+.starForm:not(:checked)>label:hover,
+/* hover current star */
+.starForm:not(:checked)>label:hover~label {
+    color: rgba(255, 162, 68, 1);
+}
+
+.starForm>input:checked+label:hover,
+/* hover current star when changing rating */
+.starForm>input:checked~label:hover,
+.starForm>label:hover~input:checked~label,
+/* lighten current selection */
+.starForm>input:checked~label:hover~label {
+    color: rgba(250, 184, 118, 0.865);
+    
+}
+
+
+@media (min-width: 800px) {
+    .detail-biere-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+
+    .detail-biere-container img {
+        object-fit: cover;
+        max-height: 70vh;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+    }
+
+    .detail-biere-container .etoileBox {
+        margin-bottom: 0;
+        text-align: right;
+    }
+
+
+}

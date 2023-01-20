@@ -1,0 +1,12 @@
+:root{
+    --color-primary : #ccc;
+    --color-secondary : purple;
+
+    --color-black:black;
+    --color-white: white;
+
+    --color-brun:rgb(126, 65, 12);
+    --color-brun-fonce:rgb(88, 46, 8);
+    --color-brun-pale : rgb(131, 91, 57);
+
+}
